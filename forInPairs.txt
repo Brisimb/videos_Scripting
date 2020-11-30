@@ -1,0 +1,5 @@
+local children = game.Workpsace.Model:GetChildren()
+
+for num, part in pairs(children) do
+part.Transparency = 0.5
+end
