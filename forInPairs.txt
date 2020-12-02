@@ -1,12 +1,9 @@
-local d = game.Workspace.folder:GetChildren()
-print(d[1])
-print(d[2])
-print(d[3])
-print(d[4])
+local jugadores = {"Alexis", "Carlos", "Javier"}
+local partes = game.Workspace.Folder:GetChildren()
 
-
-for i, v in pairs(d) do
+for i,v in pairs(partes) do
 	wait(1)
-	print(i.." = "..v.Name)
+	v.Transparency = 0.5
+	wait(0.3)
 	v:Destroy()
 end
