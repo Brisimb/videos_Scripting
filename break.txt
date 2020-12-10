@@ -1,0 +1,13 @@
+	Instance.new("Part",game.Workspace)
+	local numParts = 0
+	while true do
+		if numParts == 100 then
+			break
+		end
+		local part = Instance.new("Part", game.Workspace)
+		part.Size = game.Workspace.ejemplo.Size
+		part.Position = game.Workspace.ejemplo.Position
+		numParts += 1
+		print(numParts)
+		wait()
+	end
