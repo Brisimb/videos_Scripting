@@ -1,0 +1,28 @@
+--inicio final incrememnto
+
+--      I F  I
+for i = 1,5,1 do
+	print("Hola")
+	wait(1)
+end
+print("Final")
+
+for i = 1,5,2 do
+	print("i vale "..i)
+	wait(1)
+end
+print("fin")
+
+for i = 1,30,2 do
+	local mypart = Instance.new("Part")
+	mypart.Parent = workspace
+	mypart.Position = Vector3.new(10,10,10)
+	print(i)
+	wait(0.1)
+end
+print("fin")
+
+local t = {1,false,game.Workspace,"hello"}
+for i= 1, 4,1 do
+	print(t[i])
+end
