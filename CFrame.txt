@@ -1,0 +1,56 @@
+¿Que es CFrame?
+Cframe es la combinacion de la posicion y de la orientacion de un objeto.
+
+¿Como crear un nuevo CFrame?
+
+* game.Workspace.RedBlock.CFrame = CFrame.new(10,10,10) -- Aqui le estamos añadiendo una nueva posicion (la orientacion
+en este momento es 0,0,0 ya que tenia inicialmente se redefinio al origen)
+
+¿Como podemos componer dos CFrame?
+
+game.Workspace.RedBlock.CFrame = CFrame.new(Vector3) * CFrame.new(Vector3)
+
+
+---------- CFrame.Angles(rad,rad,rad)---------------
+
+recibe 3 angulos en radian
+
+ej: game.Workspace.RedBlock.CFrame = CFrame.new(Vector3) * CFrame.Angles(math.rad(90),0,0)
+
+--------------------------------------------------------------------------------------------
+
+
+¿Como hacer que un objeto targetee la posicion de otro?
+
+game.Workspace.RedBlock.Cframe = CFrame.new(Vector3_Obj, Vector3_Referencing)
+game.Workspace.RedBlock.CFrame = CFrame.new(game.Workspace.RedBlock.position, game.Workspace.Referencia.position)
+
+-----------------------------------------------------------------------------------------------------------
+
+¿Como podemos interpolar CFrame?
+
+podemos hacerlo de la siguiente manera:
+
+porcentaje = 0.5
+game.Workspace.RedBlock.CFrame = game.Workspace.p1.CFrame:Lerp(game.Workspace.p2.CFrame, porcentaje)
+
+------------------------------------------------------------------------------------------------------------------
+
+¿Como mover una parte en algun surface?
+lo podemos hacer con las propiedades del mismo cframe
+-lookVector hacia donde mira la parte
+-RightVector
+-UpVector
+-XVector
+-YVector
+-Zvector
+
+si queremos mover hacia un lado contrario por ejemplo hacia la izquierda lo podemos hacer de esta manera colocandole el signo negativo
+
+game.Workspace.RedBlock.CFrame += (-game.Workspace.RedBlock.CFrame.RightVector * 2) 
+
+
+
+
+
+
