@@ -1,0 +1,25 @@
+Hace unos dias roblox sacó una nueva actualización que ya llebaba en desarrollo desde hace un año
+
+donde añadieron algo muy 
+
+importate y creo que desde ahora en adelante esto se va a usar mucho. 
+
+estoy hablando de los atributos, Estas propiedades personalizadas donde podemos guardar que si daño, fuerzas,
+
+o lo que queramos. y hoy te los voy a enseñar
+
+okey chicos entonces como les dije esto es muy importante y funcional
+
+porque ya no tenemos que estar creando value`s sino que nosotros mismos podemos personalizarlas
+
+
+para empezar a ver como funciona y como las podemos implementear en nuestro desarrollo 
+
+lo que haré es crear dos partes y a cada una de ellas le agregaré un atributo de daño teniendo esto, te mostraré 
+
+el script
+
+
+leer mas: https://devforum.roblox.com/t/new-studio-beta-attributes/984141
+
+
