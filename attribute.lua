@@ -5,10 +5,10 @@ script.Parent.Touched:Connect(function(hit)
 	end
 end)
 
-script.Parent:GetAttributeChangedSignal("danio"):Connect(function()
-	local danio = script.Parent:GetAttribute("danio")
-	print("a cambiado a"..danio)
-end)
+	script.Parent:GetAttributeChangedSignal("danio"):Connect(function()
+		local danio = script.Parent:GetAttribute("danio")
+		print("a cambiado a"..danio)
+	end)
 
 script.Parent.AttributeChanged:Connect(function(nombreAtt)
 	print(nombreAtt.. "Ha cambiado")
