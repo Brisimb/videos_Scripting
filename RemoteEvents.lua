@@ -1,5 +1,27 @@
---localscript:
+--local:
+local RE = game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent")
+local UIS = game:GetService("UserInputService")
+local part = game.Workspace.Part
 
+UIS.InputBegan:Connect(function(input,GameProcessedEvent)
+	if input.KeyCode == Enum.KeyCode.F then
+		RE:FireServer(part)
+	end
+end)
+
+--script:
+local RE = game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent")
+RE.OnServerEvent:Connect(function(player, parte)
+	while wait(.3) do
+		parte.BrickColor =  BrickColor.Random()
+	end
+end)
+
+
+--ejemplo2:
+
+
+--localscript:
 local RE = game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent")
 local Emote = script.Parent
 
